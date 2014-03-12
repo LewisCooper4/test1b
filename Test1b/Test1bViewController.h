@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CardMatchingGame.h"
 
 @interface Test1bViewController : UIViewController
+{
+    CardMatchingGame *game;
+}
+
+@property (nonatomic) IBOutletCollection(UIButton) NSMutableArray *buttons;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @end
